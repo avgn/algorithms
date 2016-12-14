@@ -15,7 +15,6 @@ def merge(arr, p, q, r):
         right.append(arr[q+j])
     left.append(np.inf)
     right.append(np.inf)
-    print right, left
     i = 0
     j = 0
     for k in range(p, r):
@@ -28,10 +27,11 @@ def merge(arr, p, q, r):
 
 
 def merge_sort(arr, p, r):
-    q = (p + r) / 2
-    merge_sort(arr, p, q)
-    merge_sort(arr, q+1, r)
-    merge(arr, p, q, r)
+    if p < r:
+        q = (p + r) / 2
+        merge_sort(arr, p, q)
+        merge_sort(arr, q+1, r)
+        merge(arr, p, q, r)
 
         
 
