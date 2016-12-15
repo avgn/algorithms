@@ -7,8 +7,8 @@ import numpy as np
 def merge(arr, p, q, r):
     n1 = q - p + 1
     n2 = r - q
-    left = [ ]
-    right = [ ]
+    left = []
+    right = []
     for i in range(1, n1+1):
         left.append(arr[p+i-1])
     for j in range(1, n2+1):
