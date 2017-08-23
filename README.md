@@ -1,2 +1,2 @@
 # About
-This repository contains Python implementations of some Computer Science algorithms.
+This repository contains the implementation of some Computer Science algorithms in Python.
